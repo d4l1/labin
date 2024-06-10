@@ -1,0 +1,79 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+/* Para las fuentes Prompt */
+@font-face {
+    font-family: 'Prompt Light';
+    src: url('./assets/fonts/Prompt-Light.woff2') format('woff2'),
+         url('./assets/fonts/Prompt-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Prompt Medium';
+    src: url('./assets/fonts/Prompt-Medium.woff2') format('woff2'),
+         url('./assets/fonts/Prompt-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Prompt';
+    src: url('./assets/fonts/Prompt-Regular.woff2') format('woff2'),
+         url('./assets/fonts/Prompt-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Prompt SemiBold';
+    src: url('./assets/fonts/Prompt-SemiBold.woff2') format('woff2'),
+         url('./assets/fonts/Prompt-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Prompt Thin';
+    src: url('./assets/fonts/Prompt-Thin.woff2') format('woff2'),
+         url('./assets/fonts/Prompt-Thin.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  /* Para las fuentes Ubuntu */
+  @font-face {
+    font-family: 'Ubuntu';
+    src: url('./assets/fonts/Ubuntu-Regular.woff2') format('woff2'),
+         url('./assets/fonts/Ubuntu-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Ubuntu Light';
+    src: url('./assets/fonts/Ubuntu-Light.woff2') format('woff2'),
+         url('./assets/fonts/Ubuntu-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Ubuntu Medium';
+    src: url('./assets/fonts/Ubuntu-Medium.woff2') format('woff2'),
+         url('./assets/fonts/Ubuntu-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Ubuntu Bold';
+    src: url('./assets/fonts/Ubuntu-Bold.woff2') format('woff2'),
+         url('./assets/fonts/Ubuntu-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
