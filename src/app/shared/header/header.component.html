@@ -1,1 +1,23 @@
-<p>header works!</p>
+<header class="relative bg-[url('src/assets/images/banner1.png')] bg-no-repeat bg-cover w-full h-screen">
+  <div class="container mx-auto flex flex-col md:flex-row items-center justify-between py-4">
+    <span class="cursor-default font-ubuntu text-white">Lab - in</span>
+    <nav class="flex flex-col md:flex-row md:items-center md:space-x-8 z-20">
+      <a *ngFor="let link of navLinks" [href]="link.path" class="font-ubuntu text-white hover:text-gray-300 block md:inline-block md:font-normal">{{ link.label }}</a>
+      <div class="mt-5 md:mt-auto md:mx-auto">
+        <a *ngFor="let link of Links" [href]="link.path" class="md:mt-2 mx-2 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md font-prompt">{{ link.label }}</a>
+      </div>
+    </nav>
+  </div>
+  <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-50">
+    <a href="#next-section">
+      <div class="relative h-12 w-12">
+        <div class="absolute inset-0 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white animate-bounce" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v10.586l2.293-2.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V4a1 1 0 011-1z" clip-rule="evenodd" />
+          </svg>
+        </div>
+        <div class="absolute -bottom-4 w-full h-1 bg-white rounded-md"></div>
+      </div>
+    </a>
+  </div>
+</header>
