@@ -11,7 +11,6 @@ export class BannerComponent implements OnInit, AfterViewInit {
   @ViewChild('bannerSubText', { static: false }) bannerSubText!: ElementRef;
   @ViewChild('bannerParagraph', { static: false }) bannerParagraph!: ElementRef;
   @ViewChild('bannerButton', { static: false }) bannerButton!: ElementRef;
-  @ViewChild('backgroundAnimation', { static: false }) backgroundAnimation!: ElementRef;
 
   constructor() { }
 
@@ -29,7 +28,5 @@ export class BannerComponent implements OnInit, AfterViewInit {
     tl.from(this.bannerSubText.nativeElement, { opacity: 0, y: 50, duration: 1, ease: 'power2.out' })
       .from(this.bannerParagraph.nativeElement, { opacity: 0, y: 50, duration: 1, ease: 'power2.out' }, "-=0.5")
       .from(this.bannerButton.nativeElement, { opacity: 0, y: 50, duration: 1, ease: 'power2.out' }, "-=0.5");
-
-    this.backgroundAnimation.nativeElement.classList.add('animated-background');
   }
 }

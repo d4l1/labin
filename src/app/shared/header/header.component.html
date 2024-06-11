@@ -1,13 +1,14 @@
-<header class="relative bg-[url('src/assets/images/banner1.png')] bg-no-repeat bg-cover w-full h-screen">
+<header class="relative w-full h-screen" #backgroundAnimation>
   <div class="container mx-auto flex flex-col md:flex-row items-center justify-between py-4">
-    <span class="cursor-default font-ubuntu text-white">Lab - in</span>
+    <span class="cursor-default text-2xl font-ubuntu text-white">Lab - in</span>
     <nav class="flex flex-col md:flex-row md:items-center md:space-x-8 z-20">
-      <a *ngFor="let link of navLinks" [href]="link.path" class="font-ubuntu text-white hover:text-gray-300 block md:inline-block md:font-normal">{{ link.label }}</a>
+      <a *ngFor="let link of navLinks" [href]="link.path" class="font-ubuntu text-white block md:inline-block md:font-normal">{{ link.label }}</a>
       <div class="mt-5 md:mt-auto md:mx-auto">
         <a *ngFor="let link of Links" [href]="link.path" class="md:mt-2 mx-2 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md font-prompt">{{ link.label }}</a>
       </div>
     </nav>
   </div>
+
   <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-50">
     <a href="#next-section">
       <div class="relative h-12 w-12">

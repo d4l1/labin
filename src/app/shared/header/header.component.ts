@@ -1,12 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
+import { gsap } from 'gsap';
+
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit, AfterViewInit {
+  @ViewChild('backgroundAnimation', { static: false }) backgroundAnimation!: ElementRef;
   showMenu: boolean = false;
+
+  constructor() { }
+  
+  ngOnInit(): void {
+    // Aquí puedes añadir cualquier inicialización que necesites
+  }
 
   navLinks = [
     { path: 'servicios', label: 'Servicios' },
@@ -20,5 +29,13 @@ export class HeaderComponent {
 
   toggleMenu() {
     this.showMenu = !this.showMenu;
+  }
+
+  ngAfterViewInit(): void {
+    this.addAnimation();
+  }
+
+  addAnimation(): void {
+    this.backgroundAnimation.nativeElement.classList.add('animated-background');
   }
 }
