@@ -1,0 +1,25 @@
+<div class="bg-[--color-main]">
+    <div class="container mx-auto">
+      <div class="accordion py-20">
+          <h2 class="text-3xl font-ubuntu-bold text-center mb-8 text-[--color-custom]">Muro de exitos</h2>
+        <div class="accordion-item border-b border-gray-200" *ngFor="let item of items; let i = index">
+          <div class="accordion-title cursor-pointer py-2 px-4 bg-[--color-main] hover:bg-[--color-custom] hover:text-[--color-main] hover:transition-all font-ubuntu-medium" (click)="toggleItem(i)">
+            {{ item.title }}
+          </div>
+          <div id="content-{{ i }}" class="accordion-content px-4 py-2 bg-white font-ubuntu" [class.active]="item.isOpen">
+            <p class="text-sm text-gray-600 mb-2 whitespace-pre-line">{{ item.content }}</p>
+          </div>
+        </div>
+        <div class="flex flex-col items-center mt-8">
+          <h4 class="text-[--color-custom] font-ubuntu mb-4 text-center">
+            ¿Buscas una solución a medida para tu problema?
+            <br>
+            ¡Descubre cómo uno de nuestros proyectos resuelve exactamente eso!
+          </h4>
+          <a href="#" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md font-prompt">¿Quieres un demo?</a>
+        </div>
+      </div>
+    </div>
+</div>
+
+  

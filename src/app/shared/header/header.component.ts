@@ -19,12 +19,12 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 
   navLinks = [
     { path: 'servicios', label: 'Servicios' },
-    { path: 'nosotros', label: 'Nosotros' }
+    { path: 'nosotros', label: 'Nosotros' },
+    { path: 'integraciones', label: 'Integraciones' }
   ];
 
   Links = [
-    { path: 'cotizar', label: 'Cotizar'},
-    { path: 'contratar', label: 'Contratar'}
+    { path: 'agendar', label: 'Agendar llamada'}
   ];
 
   toggleMenu() {
