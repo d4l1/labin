@@ -1,0 +1,21 @@
+<div class="bg-[--color-main]">
+    <div class="container mx-auto py-12 flex flex-col items-center">
+        <h2 class="text-3xl font-ubuntu-bold mb-6">{{ teamTitle }}</h2>
+        <p class="text-gray-700 mb-8">{{ teamDescription }}</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div *ngFor="let member of teamMembers" class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+            <img [src]="member.imageUrl" alt="Team Member" class="w-full rounded-lg mb-4">
+            <div class="text-center">
+              <h3 class="text-xl font-ubuntu mb-2">{{ member.name }}</h3>
+              <p class="text-sm font-ubuntu mb-2">{{ member.position }}</p>
+              <p class="text-sm font-ubuntu mb-2">{{ member.main }}</p>
+              <a [href]="member.linkedinUrl" target="_blank" class="">
+                <i class="fab fa-linkedin mr-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+  
