@@ -15,7 +15,7 @@ interface TeamMember {
 })
 export class TeamComponent implements OnInit {
   teamTitle: string = 'Nuestro Equipo';
-  teamDescription: string = 'Conoce al equipo que hace posible nuestro proyecto.';
+  teamDescription: string = 'Conoce al equipo que hace posible tus proyectos.';
   
   teamMembers: TeamMember[] = [
     {
@@ -24,13 +24,6 @@ export class TeamComponent implements OnInit {
       imageUrl: '/assets/images/dalijuarez.jpg',
       linkedinUrl: 'https://www.linkedin.com/in/dali-juarez/',
       main: 'Soy concientemente feliz'
-    },
-    {
-      name: 'Nombre del Miembro 2',
-      position: 'Cargo 2',
-      imageUrl: 'path_to_image_2',
-      linkedinUrl: 'linkedin_profile_link_2',
-      main: ''
     },
     // Agrega más miembros del equipo aquí...
   ];
